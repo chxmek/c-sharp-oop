@@ -2,14 +2,16 @@
 //Console.WriteLine("Hello, World!");
 
 using System;
+using c_sharp_oop;
 
 namespace MyApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)             // class ที่มี function Main ทำงานด้าานในจะเป็น class ที่ถูกเรียกใช้งานตัวแรกเสมอ
         {
-            Console.WriteLine("Hello World!");
+            Employee emp1 = new Employee();         // object
+            Console.WriteLine(emp1);                // แสดง object
             Console.ReadKey();                      // ปิดการแสดงข้อความเสริมใน console
         }
     }
