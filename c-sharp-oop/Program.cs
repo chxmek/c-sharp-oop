@@ -8,12 +8,15 @@ namespace MyApp
 {
     internal class Program
     {
-        static void Main(string[] args)             // class ที่มี function Main ทำงานด้าานในจะเป็น class ที่ถูกเรียกใช้งานตัวแรกเสมอ
+        static void Main(string[] args)                      // class ที่มี function Main ทำงานด้าานในจะเป็น class ที่ถูกเรียกใช้งานตัวแรกเสมอ
         {
             Employee emp1 = new Employee("Mek", 60000);
-            //Employee emp2 = new Employee();
-            //Employee emp3 = new Employee();
-            Console.ReadKey();                      // ปิดการแสดงข้อความเสริมใน console
+            emp1.setName("Chawanwit");                       // เรียกใช้ setter method เพื่อเปลี่ยนชื่อ private field 
+            emp1.setSalary(100000);
+            emp1.showDetail();
+            Employee emp2 = new Employee("Jojo", 20000);
+            Employee emp3 = new Employee("Pong", 80000);
+            Console.ReadKey();                              // ปิดการแสดงข้อความเสริมใน console
         }
     }
 }

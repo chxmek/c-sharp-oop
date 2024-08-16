@@ -9,21 +9,38 @@ namespace c_sharp_oop
     internal class Employee
     {
         // field
-        private string name = "Mek";
-        private int salary = 50000;
+        private string name;
+        private int salary;
 
-        // default constructor(ชื่อจะเหมือนกับ class)
-        public Employee()
-        {
-            Console.WriteLine("Create Empty Object");
-        }
+        //// default constructor(ชื่อจะเหมือนกับ class)
+        //public Employee()
+        //{
+        //    Console.WriteLine("Create Empty Object");
+        //}
 
         // parameter constructor
         public Employee(string nameValue, int salaryValue)
         {
-            Console.WriteLine("name: " + nameValue);
-            Console.WriteLine("salary: " + salaryValue);
+            this.name = nameValue;
+            this.salary = salaryValue;
         }
 
+        // method
+        public void showDetail()
+        {
+            Console.WriteLine("Name: " + this.name);
+            Console.WriteLine("Salary: " + this.salary);
+        }
+
+        // ใช้ getter, setter เพื่อเข้าถึง private
+        // setter => เขียนข้อมูล
+        public void setName(string newName)
+        {
+            this.name = newName;
+        }
+        public void setSalary(int newSalary)
+        {
+            this.salary = newSalary;
+        }
     }
 }
