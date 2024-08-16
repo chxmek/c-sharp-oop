@@ -25,31 +25,43 @@ namespace c_sharp_oop
             this.salary = salaryValue;
         }
 
-        // method
-        public void showDetail()
-        {
-            Console.WriteLine("Name: " + this.name);
-            Console.WriteLine("Salary: " + this.salary);
-        }
+        //// method
+        //public void showDetail()
+        //{
+        //    Console.WriteLine("Name: " + this.name);
+        //    Console.WriteLine("Salary: " + this.salary);
+        //}
 
-        // ใช้ getter, setter เพื่อเข้าถึง private
-        // setter => เขียนข้อมูล
-        public void setName(string newName)
+        //// ใช้ getter, setter เพื่อเข้าถึง private
+        //// setter => เขียนข้อมูล
+        //public void setName(string newName)
+        //{
+        //    this.name = newName;
+        //}
+        //public void setSalary(int newSalary)
+        //{
+        //    this.salary = newSalary;
+        //}
+        //// getter => อ่านข้อมูล
+        //public string getName()
+        //{
+        //    return this.name;
+        //}
+        //public int getSalary() 
+        //{
+        //    return this.salary;
+        //}
+
+        // สร้าง property
+        public string Name
         {
-            this.name = newName;
+            get { return name; }    // getter => อ่านข้อมูล
+            set { name = value; }   // setter => เขียนข้อมูล, value คือค่าที่อยากจะกำหนดให้ field name
         }
-        public void setSalary(int newSalary)
+        public int Salary
         {
-            this.salary = newSalary;
-        }
-        // getter => อ่านข้อมูล
-        public string getName()
-        {
-            return this.name;
-        }
-        public int getSalary() 
-        {
-            return this.salary;
+            get { return salary; }
+            set { salary = value; }
         }
     }
 }
