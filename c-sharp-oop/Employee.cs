@@ -42,5 +42,14 @@ namespace c_sharp_oop
         {
             this.salary = newSalary;
         }
+        // getter => อ่านข้อมูล
+        public string getName()
+        {
+            return this.name;
+        }
+        public int getSalary() 
+        {
+            return this.salary;
+        }
     }
 }
