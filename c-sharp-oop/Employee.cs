@@ -21,8 +21,8 @@ namespace c_sharp_oop
         // parameter constructor
         public Employee(string nameValue, int salaryValue)
         {
-            this.name = nameValue;
-            this.salary = salaryValue;
+            this.Name = nameValue;
+            this.Salary = salaryValue;
         }
 
         //// method
@@ -53,15 +53,21 @@ namespace c_sharp_oop
         //}
 
         // สร้าง property
-        public string Name
-        {
-            get { return name; }    // getter => อ่านข้อมูล
-            set { name = value; }   // setter => เขียนข้อมูล, value คือค่าที่อยากจะกำหนดให้ field name
-        }
-        public int Salary
-        {
-            get { return salary; }
-            set { salary = value; }
-        }
+        //public string Name
+        //{
+        //    get { return name; }    // getter => อ่านข้อมูล
+        //    set { name = value; }   // setter => เขียนข้อมูล, value คือค่าที่อยากจะกำหนดให้ field name
+        //}
+        //public int Salary
+        //{
+        //    get { return salary; }
+        //    set { salary = value; }
+        //}
+        // แบบลดรูป property (ใช้!!)
+        //public string Name { get; set; }
+        //public int Salary { get; set; }
+        // ใช้ Visual Studio 2022 Generate ให้ โดยทำการ select ที่ field แล้วกด edit ที่ tools bar >> Refactor >> Encapsulate Field
+        public string Name { get => name; set => name = value; }
+        public int Salary { get => salary; set => salary = value; }
     }
 }
