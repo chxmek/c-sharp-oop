@@ -10,9 +10,9 @@ namespace MyApp
     {
         static void Main(string[] args)                        // class ที่มี function Main ทำงานด้าานในจะเป็น class ที่ถูกเรียกใช้งานตัวแรกเสมอ
         {
-            Employee emp1 = new Employee("Mek", 60000);
-            Employee emp2 = new Employee("Jojo", 20000);
-            Employee emp3 = new Employee("Pong", 80000);
+            //Employee emp1 = new Employee("Mek", 60000);
+            //Employee emp2 = new Employee("Jojo", 20000);
+            //Employee emp3 = new Employee("Pong", 80000);
 
             //emp1.showDetail();
 
@@ -21,10 +21,22 @@ namespace MyApp
             //Console.WriteLine(emp1.getName());               // เรียกใช้ getter method เพื่ออ่านค่า private field
             //Console.WriteLine(emp1.getSalary());
 
-            emp1.Name = "Chawanwit";                           // เรียกใช้ property setter
-            Console.WriteLine(emp1.Name);                      // เรียกใช้ property getter
-            emp1.Salary = 100000;
+            //emp1.Name = "Chawanwit";                           // เรียกใช้ property setter
+            //Console.WriteLine(emp1.Name);                      // เรียกใช้ property getter
+            //emp1.Salary = 100000;
+            //Console.WriteLine(emp1.Salary);
+
+            Employee emp1 = new Accounting();                 // สร้าง(object)พนักงานแผนก Accounting
+            emp1.Name = "Jane";
+            emp1.Salary = 80000;
+            Console.WriteLine(emp1.Name);
             Console.WriteLine(emp1.Salary);
+
+            Employee emp2 = new Sale();                       // สร้าง(object)พนักงานแผนก Sale
+            emp2.Name = "Sung";
+            emp2.Salary = 70000;
+            Console.WriteLine(emp2.Name);
+            Console.WriteLine(emp2.Salary);
 
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }

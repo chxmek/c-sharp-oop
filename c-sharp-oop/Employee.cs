@@ -12,18 +12,18 @@ namespace c_sharp_oop
         private string name;
         private int salary;
 
-        //// default constructor(ชื่อจะเหมือนกับ class)
+        // default constructor(ชื่อจะเหมือนกับ class), !!เมื่อ class ลูกไม่มี constructor ต้องมีการสร้าง default constructor ที่ class แม่
         //public Employee()
         //{
-        //    Console.WriteLine("Create Empty Object");
+        //    Console.WriteLine("Create Employee Object");
         //}
 
-        // parameter constructor
-        public Employee(string nameValue, int salaryValue)
-        {
-            this.Name = nameValue;
-            this.Salary = salaryValue;
-        }
+        // parameter constructor, เมื่อไม่มีการส่งค่ามาที่ parameter constructor จะไปเรียกใช้ default constructor แทน
+        //public Employee(string nameValue, int salaryValue)
+        //{
+        //    this.Name = nameValue;
+        //    this.Salary = salaryValue;
+        //}
 
         //// method
         //public void showDetail()
