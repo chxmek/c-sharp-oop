@@ -15,7 +15,14 @@ namespace c_sharp_oop
         // default constructor(ชื่อจะเหมือนกับ class)
         public Employee()
         {
-            Console.WriteLine("Create Object from Employee Class");
+            Console.WriteLine("Create Empty Object");
+        }
+
+        // parameter constructor
+        public Employee(string nameValue, int salaryValue)
+        {
+            Console.WriteLine("name: " + nameValue);
+            Console.WriteLine("salary: " + salaryValue);
         }
 
     }
