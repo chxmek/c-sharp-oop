@@ -8,8 +8,15 @@ namespace c_sharp_oop
 {
     internal class Employee
     {
-        // สร้าง field
-        public string name = "Mek";
-        public int salary = 50000;
+        // field
+        private string name = "Mek";
+        private int salary = 50000;
+
+        // default constructor(ชื่อจะเหมือนกับ class)
+        public Employee()
+        {
+            Console.WriteLine("Create Object from Employee Class");
+        }
+
     }
 }

@@ -10,9 +10,8 @@ namespace MyApp
     {
         static void Main(string[] args)             // class ที่มี function Main ทำงานด้าานในจะเป็น class ที่ถูกเรียกใช้งานตัวแรกเสมอ
         {
-            Employee emp1 = new Employee();         // object
-            Console.WriteLine(emp1.name);
-            Console.WriteLine(emp1.salary);
+            Employee emp1 = new Employee();         // object, Employee() >> คือการเรียกใช้ constructor
+            Employee emp2 = new Employee();
             Console.ReadKey();                      // ปิดการแสดงข้อความเสริมใน console
         }
     }
