@@ -8,5 +8,8 @@ namespace c_sharp_oop
 {
     internal class Employee
     {
+        // สร้าง field
+        public string name = "Mek";
+        public int salary = 50000;
     }
 }
