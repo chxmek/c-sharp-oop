@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_sharp_oop
 {
-    internal class Employee
+    internal abstract class Employee
     {
         // field
         private string name;
@@ -53,7 +53,7 @@ namespace c_sharp_oop
         //    return this.salary;
         //}
 
-        // สร้าง property
+        //// สร้าง property
         //public string Name
         //{
         //    get { return name; }    // getter => อ่านข้อมูล
@@ -64,9 +64,11 @@ namespace c_sharp_oop
         //    get { return salary; }
         //    set { salary = value; }
         //}
-        // แบบลดรูป property (ใช้!!)
+
+        //// แบบลดรูป property (ใช้!!)
         //public string Name { get; set; }
         //public int Salary { get; set; }
+
         // ใช้ Visual Studio 2022 Generate ให้ โดยทำการ select ที่ field แล้วกด edit ที่ tools bar >> Refactor >> Encapsulate Field
         public string Name { get => name; set => name = value; }
         public int Salary { get => salary; set => salary = value; }
@@ -79,5 +81,9 @@ namespace c_sharp_oop
             Console.WriteLine("Salary = " + this.Salary);
             Console.WriteLine("------------------------");
         }
+
+        // สร้าง Abstract method ที่คลาสแม่แล้วระบุแค่ชื่อ method และไม่มีการทำงานข้างใน(จะระบุการทำงานแค่ในคลาสลูก) มีข้อบังคับ คือ ลูกจะต้องนำไปให้ทุกๆคลาส
+        // เมื่อมีการระบุ abstract method จะต้องระบุ abstract ที่ชื่อคลาสด้วย(abstract class Employee)
+        public abstract double reportIncome();
     }
 }

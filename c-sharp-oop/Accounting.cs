@@ -27,5 +27,11 @@ namespace c_sharp_oop
             Console.WriteLine("Gender = " + this.gender);
             Console.WriteLine("------------------------");
         }
+
+        // สร้าง abstract method
+        public override double reportIncome()
+        {
+            return base.Salary * 12;
+        }
     }
 }

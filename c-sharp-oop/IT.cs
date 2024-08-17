@@ -14,12 +14,17 @@ namespace c_sharp_oop
         {
             this.exp = exp;
         }
+
         public override void showEmployee()
         {
             Console.WriteLine("Name = " + base.Name);
             Console.WriteLine("Salary = " + base.Salary);
             Console.WriteLine("Exp = " + this.exp);
             Console.WriteLine("------------------------");
+        }
+        public override double reportIncome()
+        {
+            return (base.Salary * 12) * this.exp;
         }
     }
 }

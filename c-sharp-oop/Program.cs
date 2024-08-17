@@ -48,13 +48,17 @@ namespace MyApp
             //Console.WriteLine(emp3.Salary);
 
 
-            Employee emp1 = new Accounting("Jane", 80000, "female");
-            Employee emp2 = new Sale("Sung", 70000, "Bangkok");
-            Employee emp3 = new IT("Kob", 40000, 2);
+            Employee emp1 = new Accounting("Jane", 50000, "female");
+            Employee emp2 = new Sale("Sung", 100000, "Bangkok");
+            Employee emp3 = new IT("Kob", 50000, 5);
 
-            emp1.showEmployee();
-            emp2.showEmployee();
-            emp3.showEmployee();
+            //emp1.showEmployee();
+            //emp2.showEmployee();
+            //emp3.showEmployee();
+
+            Console.WriteLine("Accounting = " + emp1.reportIncome());
+            Console.WriteLine("Sale = " + emp2.reportIncome());
+            Console.WriteLine("IT = " + emp3.reportIncome());
 
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }
