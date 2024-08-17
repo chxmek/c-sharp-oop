@@ -14,5 +14,12 @@ namespace c_sharp_oop
         {
             this.area = area;
         }
+        public override void showEmployee()
+        {
+            Console.WriteLine("Name = " + base.Name);
+            Console.WriteLine("Salary = " + base.Salary);
+            Console.WriteLine("Area = " + this.area);
+            Console.WriteLine("------------------------");
+        }
     }
 }

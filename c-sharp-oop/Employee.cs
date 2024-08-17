@@ -70,5 +70,14 @@ namespace c_sharp_oop
         // ใช้ Visual Studio 2022 Generate ให้ โดยทำการ select ที่ field แล้วกด edit ที่ tools bar >> Refactor >> Encapsulate Field
         public string Name { get => name; set => name = value; }
         public int Salary { get => salary; set => salary = value; }
+
+        // สร้าง method
+        // ใส่ virtual ใน method คลาสแม่ และ ใส่ override ใน method คลาสลูก เพื่อให้คลาสลูกสามารถปรับแต่ง method ได้ โดยชื่อ method ต้องเหมือนกัน
+        public virtual void showEmployee()
+        {
+            Console.WriteLine("Name = " + this.Name);
+            Console.WriteLine("Salary = " + this.Salary);
+            Console.WriteLine("------------------------");
+        }
     }
 }

@@ -52,6 +52,10 @@ namespace MyApp
             Employee emp2 = new Sale("Sung", 70000, "Bangkok");
             Employee emp3 = new IT("Kob", 40000, 2);
 
+            emp1.showEmployee();
+            emp2.showEmployee();
+            emp3.showEmployee();
+
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }
     }
