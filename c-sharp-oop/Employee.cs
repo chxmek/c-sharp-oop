@@ -11,6 +11,7 @@ namespace c_sharp_oop
         // field
         private string name;
         private int salary;
+        protected string officeName = "chxmek Studio";      // field นี้สามารถเข้าถึงได้จากคลาสลูก (this.officeName)
 
         // default constructor(ชื่อจะเหมือนกับ class), !!เมื่อ class ลูกไม่มี constructor ต้องมีการสร้าง default constructor ที่ class แม่
         //public Employee()
