@@ -16,6 +16,7 @@ namespace c_sharp_oop
         public Accounting(string name, int salary, string gender) : base(name, salary)   // ใช้ base เพื่ออ้างอิงถึง constructor ที่อยู่ในคลาสแม่
         {
             this.gender = gender;
+            Console.WriteLine(name + salary + gender);
         }
     }
 }
