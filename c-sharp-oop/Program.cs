@@ -56,14 +56,20 @@ namespace MyApp
             //emp2.showEmployee();
             //emp3.showEmployee();
 
-            Console.WriteLine("Accounting = " + emp1.reportIncome());
-            Console.WriteLine("Sale = " + emp2.reportIncome());
-            Console.WriteLine("IT = " + emp3.reportIncome());
+            //Console.WriteLine("Accounting = " + emp1.reportIncome());
+            //Console.WriteLine("Sale = " + emp2.reportIncome());
+            //Console.WriteLine("IT = " + emp3.reportIncome());
 
 
             // ใช้ static field (ที่อยู่ใน Class Company)
-            Console.WriteLine("Company's Name = " + Company.name);
-            Console.WriteLine("Founder = " + Company.founder);
+            //Console.WriteLine("Company's Name = " + Company.name);
+            //Console.WriteLine("Founder = " + Company.founder);
+
+            Company.addEmployee(emp1);
+            Company.addEmployee(emp2);
+            Company.addEmployee(emp3);
+
+            Company.getEmployees();
 
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }
