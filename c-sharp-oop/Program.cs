@@ -60,6 +60,11 @@ namespace MyApp
             Console.WriteLine("Sale = " + emp2.reportIncome());
             Console.WriteLine("IT = " + emp3.reportIncome());
 
+
+            // ใช้ static field (ที่อยู่ใน Class Company)
+            Console.WriteLine("Company's Name = " + Company.name);
+            Console.WriteLine("Founder = " + Company.founder);
+
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }
     }
