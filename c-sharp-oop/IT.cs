@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace c_sharp_oop
 {
-    internal class Sale : Employee
+    internal class IT : Employee
     {
-        private string area;
+        private int exp;
         
-        public Sale (string name, int salary, string area) : base(name, salary)
+        public IT (string name, int salary, int exp) : base(name, salary)
         {
-            this.area = area;
+            this.exp = exp;
         }
     }
 }

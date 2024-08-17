@@ -9,10 +9,13 @@ namespace c_sharp_oop
     // Inheritance(การสืบทอดคุณสมบัติ) >> Class Accounting สืบทอดมาจาก Class Employee(คลาสแม่)
     internal class Accounting : Employee
     {
+        // สร้าง field
+        private string gender;
+
         // สร้าง constructor
-        public Accounting() 
+        public Accounting(string name, int salary, string gender) : base(name, salary)   // ใช้ base เพื่ออ้างอิงถึง constructor ที่อยู่ในคลาสแม่
         {
-            Console.WriteLine("Create Accounting Object");
+            this.gender = gender;
         }
     }
 }

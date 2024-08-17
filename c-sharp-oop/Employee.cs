@@ -19,11 +19,11 @@ namespace c_sharp_oop
         //}
 
         // parameter constructor, เมื่อไม่มีการส่งค่ามาที่ parameter constructor จะไปเรียกใช้ default constructor แทน
-        //public Employee(string nameValue, int salaryValue)
-        //{
-        //    this.Name = nameValue;
-        //    this.Salary = salaryValue;
-        //}
+        public Employee(string name, int salary)
+        {
+            this.Name = name;
+            this.Salary = salary;
+        }
 
         //// method
         //public void showDetail()

@@ -14,7 +14,9 @@ namespace MyApp
             //Employee emp2 = new Employee("Jojo", 20000);
             //Employee emp3 = new Employee("Pong", 80000);
 
+
             //emp1.showDetail();
+
 
             //emp1.setName("Chawanwit");                       // เรียกใช้ setter method เพื่อเปลี่ยนค่า private field 
             //emp1.setSalary(100000);
@@ -26,17 +28,29 @@ namespace MyApp
             //emp1.Salary = 100000;
             //Console.WriteLine(emp1.Salary);
 
-            Employee emp1 = new Accounting();                 // สร้าง(object)พนักงานแผนก Accounting
-            emp1.Name = "Jane";
-            emp1.Salary = 80000;
-            Console.WriteLine(emp1.Name);
-            Console.WriteLine(emp1.Salary);
 
-            Employee emp2 = new Sale();                       // สร้าง(object)พนักงานแผนก Sale
-            emp2.Name = "Sung";
-            emp2.Salary = 70000;
-            Console.WriteLine(emp2.Name);
-            Console.WriteLine(emp2.Salary);
+            //Employee emp1 = new Accounting();                 // สร้าง(object)พนักงานแผนก Accounting
+            //emp1.Name = "Jane";
+            //emp1.Salary = 80000;
+            //Console.WriteLine(emp1.Name);
+            //Console.WriteLine(emp1.Salary);
+
+            //Employee emp2 = new Sale();                       // สร้าง(object)พนักงานแผนก Sale
+            //emp2.Name = "Sung";
+            //emp2.Salary = 70000;
+            //Console.WriteLine(emp2.Name);
+            //Console.WriteLine(emp2.Salary);
+
+            //Employee emp3 = new IT();                       // สร้าง(object)พนักงานแผนก IT
+            //emp3.Name = "Kob";
+            //emp3.Salary = 40000;
+            //Console.WriteLine(emp3.Name);
+            //Console.WriteLine(emp3.Salary);
+
+
+            Employee emp1 = new Accounting("Jane", 80000, "female");
+            Employee emp2 = new Sale("Sung", 70000, "Bangkok");
+            Employee emp3 = new IT("Kob", 40000, 2);
 
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }
