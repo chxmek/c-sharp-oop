@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace c_sharp_oop
 {
     // Inheritance(การสืบทอดคุณสมบัติ) >> Class Accounting สืบทอดมาจาก Class Employee(คลาสแม่)
-    internal class Accounting : Employee
+    internal class Accounting : Employee, General       // สืบทอดเพิ่มอีก 1 class แต่ต้องเป็น interface class
     {
         // สร้าง field
         private string gender;
@@ -32,6 +32,17 @@ namespace c_sharp_oop
         public override double reportIncome()
         {
             return base.Salary * 12;
+        }
+
+        // สร้าง implement from Class interface General
+        public void showUniform()
+        {
+            Console.WriteLine("Uniform: White Color");
+        }
+
+        public string showBonus()
+        {
+            return "Bonus 20%";
         }
     }
 }

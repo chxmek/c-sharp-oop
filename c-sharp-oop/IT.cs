@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_sharp_oop
 {
-    internal class IT : Employee
+    internal class IT : Employee, General
     {
         private int exp;
         
@@ -25,6 +25,16 @@ namespace c_sharp_oop
         public override double reportIncome()
         {
             return (base.Salary * 12) * this.exp;
+        }
+
+        public void showUniform()
+        {
+            Console.WriteLine("Uniform: Black Color");
+        }
+
+        public string showBonus()
+        {
+            return "Bonus 59%";
         }
     }
 }

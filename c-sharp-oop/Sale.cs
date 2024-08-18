@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_sharp_oop
 {
-    internal class Sale : Employee
+    internal class Sale : Employee, General
     {
         private string area;
         private double commission = 10000;
@@ -27,6 +27,16 @@ namespace c_sharp_oop
         public override double reportIncome()
         {
             return (base.Salary * 12) + (this.commission * 12);
+        }
+
+        public void showUniform()
+        {
+            Console.WriteLine("Uniform: Pink Color");
+        }
+
+        public string showBonus()
+        {
+            return "Bonus: 50%";
         }
     }
 }

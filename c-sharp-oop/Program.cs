@@ -48,9 +48,9 @@ namespace MyApp
             //Console.WriteLine(emp3.Salary);
 
 
-            Employee emp1 = new Accounting("Jane", 50000, "female");
-            Employee emp2 = new Sale("Sung", 100000, "Bangkok");
-            Employee emp3 = new IT("Kob", 50000, 5);
+            Accounting emp1 = new Accounting("Jane", 50000, "female");
+            Sale emp2 = new Sale("Sung", 100000, "Bangkok");
+            IT emp3 = new IT("Kob", 50000, 5);
 
             //emp1.showEmployee();
             //emp2.showEmployee();
@@ -70,6 +70,9 @@ namespace MyApp
             Company.addEmployee(emp3);
 
             Company.getEmployees();
+
+            emp1.showUniform();
+            emp1.showBonus();
 
             Console.ReadKey();                                 // ปิดการแสดงข้อความเสริมใน console
         }
